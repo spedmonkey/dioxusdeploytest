@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hot_dog</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  <link rel="preload" as="script" href="/./assets/hot_dog-eb76184e1a83d03f.js" crossorigin><link rel="preload" as="fetch" type="application/wasm" href="/./assets/hot_dog_bg-5cd4e53e51687560.wasm" crossorigin></head>
+  <body>
+    <div id="main"></div>
+  <script>
+            // We can't use a module script here because we need to start the script immediately when streaming
+            import("/./assets/hot_dog-eb76184e1a83d03f.js").then(
+                ({ default: init }) => {
+                init("/./assets/hot_dog_bg-5cd4e53e51687560.wasm").then((wasm) => {
+                    if (wasm.__wbindgen_start == undefined) {
+                    wasm.main();
+                    }
+                });
+                }
+            );
+            </script>
+            
+            </body>
+</html>
